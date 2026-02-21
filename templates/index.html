@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Automatic Lecture Notes Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>🎧 Automatic Lecture Notes Generator</h1>
+
+    <input type="file" id="audioFile" accept=".wav,.mp3,.m4a">
+    <button onclick="uploadAudio()">Upload Audio</button>
+
+    <div class="actions">
+        <button onclick="startRecording()">🎙 Start Recording</button>
+        <button onclick="stopRecording()">⏹ Stop Recording</button>
+    </div>
+
+    <div id="timer" class="timer">⏱ 00:00</div>
+
+    <h3>Transcribed Text</h3>
+    <textarea id="text" class="box" rows="8"></textarea>
+
+    <div class="actions">
+        <button onclick="summarize()">Summarize</button>
+        <button onclick="keywords()">Key Points</button>
+        <button onclick="flashcards()">Flashcards</button>
+    </div>
+
+    <h3>Summary</h3>
+    <div id="summary" class="box"></div>
+
+    <h3>Key Points</h3>
+    <ul id="keywords"></ul>
+
+    <h3>Flashcards</h3>
+    <div id="flashcards" class="flashcard-container"></div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

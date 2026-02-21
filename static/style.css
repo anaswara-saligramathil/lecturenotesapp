@@ -1,0 +1,93 @@
+body {
+    background-color: #0b0f1a;
+    color: #e0e0ff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 700px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+button {
+    background-color: #4b6cff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 6px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #6879ff;
+}
+
+.box {
+    background: #11152a;
+    color: #e0e0ff;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 5px;
+    border: 1px solid #4b6cff;
+}
+
+ul#keywords {
+    background: #11152a;
+    color: #ffd166;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+h1, h3 {
+    text-align: center;
+    color: white;
+}
+
+.actions {
+    text-align: center;
+}
+
+.timer {
+    text-align: center;
+    font-size: 18px;
+    color: #ffd166;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* FLASHCARD STYLING */
+.flashcard-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.flashcard {
+    background: linear-gradient(135deg, #1c2340, #2a3470);
+    border-radius: 12px;
+    padding: 15px;
+    min-height: 130px;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.flashcard:hover {
+    transform: translateY(-6px) scale(1.02);
+}
+
+.flashcard h4 {
+    color: #ffd166;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.flashcard p {
+    color: #e0e0ff;
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: center;
+}
